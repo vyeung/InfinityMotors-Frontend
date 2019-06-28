@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:700i&display=swap');
+
+@font-face {
+	font-family: airstrike;
+	src: url("./assets/airstrike.ttf");
+}
+
+a {
+  text-decoration: none !important;
+}
+
+button {
+  outline: none !important;
+}
