@@ -1,0 +1,37 @@
+.cars_container {
+  margin-top: 90px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.car_type {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+.car_type img {
+  margin: 15px;
+  height: 333px;
+  width: 400px;
+  opacity: .85;
+  transition: opacity .3s ease-in-out;
+  cursor: pointer;
+}
+.car_type img:hover {
+  opacity: 1.0;
+}
+.car_type_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+}
+
+.noLinkEffects {
+  color: white;
+  pointer-events: none;
+}
