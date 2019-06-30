@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./Home.css";
 
+import { Link } from "react-router-dom"
 import Button from "@material-ui/core/Button";
 
 class Home extends Component {
@@ -8,7 +9,7 @@ class Home extends Component {
     return (
       <div>
         <div className="montage_container">
-          <video loop autoPlay>
+          <video loop muted autoPlay>
             <source type="video/mp4" src="/videos/car_montage.mp4" />
           </video>
           {/* the scroll-down animation */}
@@ -27,14 +28,17 @@ class Home extends Component {
               everyday commuter to the avid hypercar collector.  Click below to see our listings.
             </p>
           </div>
-          <Button 
-            className="aboutUs_button" 
-            variant="contained" 
-            color="primary" 
-            style={{backgroundColor: "#114b5f"}}
-          >
-            See Cars
-          </Button>
+
+          <Link to="/cars">
+            <Button 
+              className="aboutUs_button" 
+              variant="contained" 
+              color="primary" 
+              style={{backgroundColor: "#114b5f"}}
+            >
+              See Cars
+            </Button>
+          </Link>
         </div>
       </div>
     );
