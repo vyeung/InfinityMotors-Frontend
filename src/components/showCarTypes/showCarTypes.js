@@ -1,5 +1,5 @@
 import React from 'react';
-import "./cars.css";
+import "./showCarTypes.css";
 
 import { Link } from "react-router-dom";
 import compact from "../../assets/carTypeImages/compact.jpg";
@@ -8,9 +8,9 @@ import executive from "../../assets/carTypeImages/executive.jpg";
 import hypercar from "../../assets/carTypeImages/hypercar.jpg";
 import suv from "../../assets/carTypeImages/suv.jpg";
 
-const cars = () => {
+const showCarTypes = () => {
   return (
-    <div className="cars_container">
+    <div className="carTypes_container">
       <div className="car_type">
         {/* make both img and text be clickable and work as links */}
         <Link to="/cars/compact">
@@ -60,4 +60,4 @@ const cars = () => {
   );
 };
 
-export default cars;
+export default showCarTypes;
