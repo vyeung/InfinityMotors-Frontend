@@ -4,13 +4,15 @@ import "./App.css";
 import Layout from "../src/hoc/layout";
 import { Switch, Route } from "react-router-dom";
 import Home from "../src/components/home/Home";
-import Cars from "../src/components/cars/cars";
+import ShowCarTypes from "../src/components/showCarTypes/showCarTypes";
+import ShowCars from "../src/components/ShowCars/ShowCars";
 
 function App() {
   return (
     <Layout>
       <Switch>
-        <Route path="/cars" component={Cars} />
+        <Route path="/cars/:carType" component={ShowCars} />
+        <Route path="/cars" component={ShowCarTypes} />
         <Route path="/" component={Home} />
       </Switch>
     </Layout>
