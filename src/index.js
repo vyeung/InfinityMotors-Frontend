@@ -5,11 +5,14 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import { BrowserRouter } from "react-router-dom";
+import ScrollToTop from "./components/utils/ScrollToTop";
 
 const AppWithRoutes = (props) => {
   return(
     <BrowserRouter>
-      <App {...props} />
+      <ScrollToTop>
+        <App {...props} />
+      </ScrollToTop>
     </BrowserRouter>
   );
 }
