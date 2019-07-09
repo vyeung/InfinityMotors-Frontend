@@ -31,7 +31,7 @@ class Home extends Component {
 
           <Link to="/cars">
             <Button 
-              className="aboutUs_button" 
+              className="generic_button" 
               variant="contained" 
               color="primary" 
               style={{backgroundColor: "#114b5f"}}

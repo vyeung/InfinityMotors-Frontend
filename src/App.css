@@ -12,3 +12,7 @@ a {
 button {
   outline: none !important;
 }
+
+.generic_button:hover {
+  background-color: #196f8b !important;
+}
