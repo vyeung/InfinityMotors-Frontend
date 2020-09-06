@@ -1,0 +1,47 @@
+.car_container {
+  margin: 100px 0px;
+  text-align: center;
+}
+
+.carCarousel {
+  width: 350px;
+  height: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 410px) {
+  .carCarousel {
+    width: 500px;
+  }
+}
+
+.carousel-item {
+  height: 240px;
+}
+@media (min-width: 410px) {
+  .carousel-item {
+    height: 330px;
+  }
+}
+
+.carousel-indicators li {
+  background-color: #999;
+  background-color: rgba(70, 70, 70, .5);
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+.carousel-indicators .active {
+  background-color: #444;
+}
+.carousel-indicators {
+  bottom: -50px;
+}
+
+.carousel-inner {
+  margin-bottom: 50px;
+}
+
+.table {
+  width: 60%;
+  margin: 30px auto 50px auto;
+}
